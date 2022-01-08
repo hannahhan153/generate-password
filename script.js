@@ -1,14 +1,3 @@
-// user loads into site and sees a button
-// make button and area for password
-//user clicks button
-// add event listener to button
-
-// a way to store characters that the user wants
-// a way to randomly select character and build a string
-// return random password
-//user gets password
-
-
 // String method to define criteria variables
 var lowerChar = "abcdefghijklmnopqrstuvwxyz"
 var upperChar = "ABCDEFGHIJKLMNOPQRSTUVQXYZ"
@@ -45,12 +34,12 @@ function generatePassword() {
       return getPassLength();
     }
     return passLength;
-    
+
   }
   // Check the number of characters user input 
   var passwordLength = getPassLength()
   console.log(passwordLength);
-  
+
   // Ask user confirm prompts for lowercase, uppercase, numerical, and/or special characters in password
   var lowerConfirm = confirm("Do you want lowercase characters?");
   var upperConfirm = confirm("Do you want uppercase characters?");
@@ -75,12 +64,12 @@ function generatePassword() {
   }
 
 
-// possChar takes into account length of password and generates random numeric value to add to empty string of chosChar for password output 
+  // possChar takes into account length of password and generates random numeric value to add to empty string of chosChar for password output 
   for (let i = 0; i < passwordLength; i++) {
     chosChar += possChar[Math.floor(Math.random() * possChar.length)]
   }
-// User gets random password
-return chosChar;
+  // User gets random password
+  return chosChar;
 }
 
 // Displays random password
