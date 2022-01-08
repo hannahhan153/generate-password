@@ -17,8 +17,10 @@ var specChar = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+// Function to generate password based on prompts user selects
 function generatePassword() {
 
+  // Empty strings based on user preference for password
   var possChar = ''
   var chosChar = ''
 
@@ -26,6 +28,7 @@ function generatePassword() {
     var passLength = prompt("How many characters would you like?");
     if (passLength === "" || passLength === null) {
       window.alert("You need to provide a number between 8 and 128! Please try again.")
+      // Use return to call function again and stop the rest of this function from running
       return getPassLength();
     }
 
