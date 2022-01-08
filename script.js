@@ -24,26 +24,28 @@ function generatePassword() {
   var possChar = ''
   var chosChar = ''
 
-  // 
+  // Function to generate password based on prompt about password length 
   function getPassLength() {
+    // Ask user how many characters for password and provide input field for user
     var passLength = prompt("How many characters would you like?");
+    // Use "if" conditional statement to specify the number of characters to execute function
     if (passLength === "" || passLength === null) {
       window.alert("You need to provide a number between 8 and 128! Please try again.")
       // Use return to call function again and stop the rest of this function from running
       return getPassLength();
     }
-
+    // Use "if" conditional statement for input greater than or equal to 8
     if (passLength < 8) {
       window.alert("You need to provide a number greater than or equal to 8. Please try again.")
       return getPassLength();
     }
-
+    // Use "if" conditional statement for input less than or equal to 128
     if (passLength > 128) {
       window.alert("You need to provide a number less than 128. Please try again.")
       return getPassLength();
     }
-
     return passLength;
+    
   }
 
   var passwordLength = getPassLength()
