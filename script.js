@@ -79,7 +79,7 @@ function generatePassword() {
   for (let i = 0; i < passwordLength; i++) {
     chosChar += possChar[Math.floor(Math.random() * possChar.length)]
   }
-// User gets password
+// User gets random password
 return chosChar;
 }
 
