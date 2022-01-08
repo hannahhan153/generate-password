@@ -2,7 +2,7 @@
 // make button and area for password
 //user clicks button
 // add event listener to button
-// a way of asking user for characters
+
 // a way to store characters that the user wants
 // a way to randomly select character and build a string
 // return random password
@@ -57,7 +57,7 @@ function generatePassword() {
   var numerConfirm = confirm("Do you want numeric characters?");
   var specConfirm = confirm("Do you want special characters?")
 
-  // Based on user input for confirm prompts, add to empty string of possChar for password output
+  // Based on user input for confirm prompts, add and store to empty string of possChar 
   if (lowerConfirm) {
     possChar += lowerChar
   }
@@ -75,12 +75,12 @@ function generatePassword() {
   }
 
 
-
+// possChar takes into account length of password and generates random numeric value to add to empty string of chosChar for password output 
   for (let i = 0; i < passwordLength; i++) {
     chosChar += possChar[Math.floor(Math.random() * possChar.length)]
   }
 // User gets password
-  return chosChar;
+return chosChar;
 }
 
 // Displays random password
