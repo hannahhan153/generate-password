@@ -47,10 +47,11 @@ function generatePassword() {
     return passLength;
     
   }
-
+  // Check the number of characters user input 
   var passwordLength = getPassLength()
   console.log(passwordLength);
-
+  
+  // Ask user confirm prompts for lowercase, uppercase, numerical, and/or special characters in password
   var lowerConfirm = confirm("Do you want lowercase characters?");
   var upperConfirm = confirm("Do you want uppercase characters?");
   var numerConfirm = confirm("Do you want numeric characters?");
