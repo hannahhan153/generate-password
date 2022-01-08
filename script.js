@@ -9,12 +9,12 @@
 //user gets password
 
 
-// Assignment code here
+// String method to define criteria variables
 var lowerChar = "abcdefghijklmnopqrstuvwxyz"
 var upperChar = "ABCDEFGHIJKLMNOPQRSTUVQXYZ"
 var numerChar = "0123456789"
 var specChar = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-// Get references to the #generate element
+// generateBtn element with class #generate is returned
 var generateBtn = document.querySelector("#generate");
 
 // Function to generate password based on prompts user selects
@@ -24,6 +24,7 @@ function generatePassword() {
   var possChar = ''
   var chosChar = ''
 
+  // 
   function getPassLength() {
     var passLength = prompt("How many characters would you like?");
     if (passLength === "" || passLength === null) {
