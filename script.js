@@ -93,5 +93,5 @@ function writePassword() {
 
 }
 
-// Event listener generates button with a "click"
+// Event listener generates button when user clicks button
 generateBtn.addEventListener("click", writePassword);
