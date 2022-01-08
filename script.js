@@ -57,7 +57,7 @@ function generatePassword() {
   var numerConfirm = confirm("Do you want numeric characters?");
   var specConfirm = confirm("Do you want special characters?")
 
-
+  // Based on user input for confirm prompts, add to empty string of possChar for password output
   if (lowerConfirm) {
     possChar += lowerChar
   }
